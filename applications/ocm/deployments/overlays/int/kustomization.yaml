@@ -5,12 +5,3 @@ resources:
   - ../../base
 
 namespace: ocm-int
-
-#transformers:
-#  - image-tag-transformer.yaml
-
-patches:
-  - target:
-      kind: Namespace
-      name: ocm
-    path: patches.yaml
