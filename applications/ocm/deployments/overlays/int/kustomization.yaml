@@ -4,6 +4,8 @@ kind: Kustomization
 resources:
   - ../../base
 
+namespace: ocm-int
+
 #transformers:
 #  - image-tag-transformer.yaml
 

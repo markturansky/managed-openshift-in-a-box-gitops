@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: hive-managed-clusters
+
+resources:
+  - namespace.yaml
+  - openshift.yaml
+
+secretGenerator:
+  - name: cluster-01-install-config
+    files:
+      - install-config.yaml
