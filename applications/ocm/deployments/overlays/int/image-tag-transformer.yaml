@@ -1,0 +1,11 @@
+## transformer_1.yaml
+#---
+#apiVersion: builtin
+#kind: ImageTagTransformer
+#metadata:
+#  name: ocm-update-the-image-tag
+#imageTag:
+#  name: abc123-old-tag
+#  newName: def456-new-tag
+#  newTag: tag
+#
