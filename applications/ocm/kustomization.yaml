@@ -3,6 +3,3 @@ kind: Kustomization
 
 resources:
   - clusters/
-  - deployments/overlays/int/
-  - deployments/overlays/stage/
-  - deployments/overlays/prod/
