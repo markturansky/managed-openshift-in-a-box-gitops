@@ -28,7 +28,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: ${DATABASE_VOLUME_CAPACITY}
+      storage: 5Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
