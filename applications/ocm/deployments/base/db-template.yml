@@ -103,15 +103,4 @@ spec:
           #emptyDir: {}
           persistentVolumeClaim:
             claimName: trex-db
-status: {}
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: trex-db
-stringData:
-  db.host: trex-db
-  db.name: trex-db
-  db.password: foobar
-  db.user: trex-db
-  db.port: 5432
+
