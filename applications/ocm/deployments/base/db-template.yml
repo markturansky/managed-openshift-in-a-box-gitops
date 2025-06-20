@@ -49,28 +49,27 @@ spec:
         name: trex-db
     spec:
       containers:
-        - capabilities: {}
-          env:
+        - env:
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
                   key: db.user
-                  name: trex-db-rds
+                  name: trex-db
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
                   key: db.password
-                  name: trex-db-rds
+                  name: trex-db
             - name: POSTGRES_DB
               valueFrom:
                 secretKeyRef:
                   key: db.name
-                  name: trex-db-rds
+                  name: trex-db
             - name: POSTGRES_PORT
               valueFrom:
                 secretKeyRef:
                   key: db.port
-                  name: trex-db-rds
+                  name: trex-db
             - name: PGDATA
               value: /var/lib/pgsql/data/pgdata
           image: docker.io/library/postgres:16.2
